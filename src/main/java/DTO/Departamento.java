@@ -1,36 +1,14 @@
-package annotations;
+package DTO;
 
 import java.io.Serializable;
-import java.util.List;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
 
 
-	
-
-@Entity
-@Table(name = "DEPARTAMENTO")
 public class Departamento implements Serializable {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)	
-	@Column(name = "CODIGO", nullable = false)
 	private int codigo;
-	
-	@Column(name = "NOMBRE", nullable = false)
     private String nombre;
-	
-	@Column(name = "COD_RESPONSABLE", nullable = false)
 	private int cod_responsable;
 	
-	// @Transient
-	// private List<Statement> statements;
 	
 	public Departamento() {};
 
@@ -82,12 +60,6 @@ public class Departamento implements Serializable {
 	public void setCod_responsable(int cod_responsable) {
 		this.cod_responsable = cod_responsable;
 	}
-	
-	
-	  
-	//@Transient
-	//private List<Statement> statements;
-	
-	
+	  	
 	  
 }

@@ -1,4 +1,4 @@
-package entities;
+package DAO;
 
 import java.util.List;
 

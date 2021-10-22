@@ -1,54 +1,21 @@
-package annotations;
+package DTO;
 
 import java.io.Serializable;
-import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+public class Empleado implements Serializable {
 
-@Entity
-@Table(name = "EMPLEADO")
-public class Empleado {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)	
-	@Column(name = "CODIGO", nullable = false)
 	private int codigo;
-	
-	@Column(name = "NOMBRE", nullable = false)
     private String nombre;
-	
-	@Column(name = "APELLIDO1", nullable = false)
     private String apellido1;
-	
-	@Column(name = "APELLIDO2", nullable = false)
     private String apellido2;
-	
-	@Column(name = "LUGAR_NACIMIENTO", nullable = false)
     private String lugar_nacimiento;
-	
-	@Column(name = "FECHA_NACIMIENTO", nullable = false)
 	private String fecha_nacimiento;
-	
-	@Column(name = "DIRECCION", nullable = false)
 	private String direccion;
-	
-	@Column(name = "TELEFONO", nullable = false)
 	private String telefono;
-	
-	@Column(name = "PUESTO", nullable = false)
 	private String puesto;
 	
-	@Column(name = "COD_DEPARTAMENTO", nullable = false)
 	private int cod_departamento;
-	/*
-	  @Transient
-	  private List<Statement> statements;
-	*/
+	
 	
 	public Empleado() {}
 	public Empleado(int codigo, String nombre, String apellido1, String apellido2, String lugar_nacimiento,
