@@ -27,6 +27,8 @@
             <property name="hibernate.dbcp.maxWaitMillis">-1</property>
 
             <!-- MAPEOS CON XML -->
+            <mapping class="src.main.java.DTO.Departamento.java"/>
+            <mapping class="src.main.java.DTO.Empleado.java"/>
             <mapping resource="departamento.hbm.xml"/>
             <mapping resource="empleado.hbm.xml"/>
       </session-factory>
