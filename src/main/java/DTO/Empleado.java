@@ -32,6 +32,20 @@ public class Empleado implements Serializable {
 		this.puesto = puesto;
 		this.cod_departamento = cod_departamento;
 	}
+	public Empleado(String nombre, String apellido1, String apellido2, String lugar_nacimiento,
+			String fecha_nacimiento, String direccion, String telefono, String puesto, int cod_departamento) {
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.apellido1 = apellido1;
+		this.apellido2 = apellido2;
+		this.lugar_nacimiento = lugar_nacimiento;
+		this.fecha_nacimiento = fecha_nacimiento;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.puesto = puesto;
+		this.cod_departamento = cod_departamento;
+	}
 	/**
 	 * @return the codigo
 	 */
