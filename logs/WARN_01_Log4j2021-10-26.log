@@ -1,0 +1,510 @@
+[2021-10-26 10:26:00] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:26:00] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:26:00] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:26:01] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:30:31] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:30:31] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:30:31] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:30:32] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.EmpleadoCON.menu(EmpleadoCON.java:23)
+	at principal.main.main(main.java:24)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:31:04] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:31:04] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:31:04] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:31:04] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:33:41] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:33:42] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:33:42] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:33:42] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:34:49] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:34:49] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:34:49] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:34:50] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:37:19] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:37:19] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:37:19] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:37:19] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:41:26] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:41:26] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:41:26] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:41:26] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:473)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:84)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:25)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.jc.jdbc.Driver]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.loadDriverIfPossible(DriverManagerConnectionProviderImpl.java:149)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator(DriverManagerConnectionProviderImpl.java:105)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:89)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.jc.jdbc.Driver
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 27 more
+[2021-10-26 10:42:35] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:42:36] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:42:36] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:42:36] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: src.main.java.DTO.Departamento
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [src.main.java.DTO.Departamento]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: src.main.java.DTO.Departamento
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-26 10:44:03] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:44:03] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:44:03] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:44:04] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:45:49] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:45:49] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:45:49] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:45:50] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:47:26] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:47:26] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:47:26] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:47:27] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:49:51] [ ERROR] [ErrorTracker:62] line 1:1: unexpected token: *
+[2021-10-26 10:49:51] [ ERROR] [ErrorTracker:57] line 1:1: unexpected token: *
+line 1:1: unexpected token: *
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:210)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:600)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:709)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:809)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:109)
+	at DAO.EmpleadoDAO.seleccionarEmpleados(EmpleadoDAO.java:73)
+	at principal.EmpleadoCON.menu(EmpleadoCON.java:54)
+	at principal.main.main(main.java:24)
+[2021-10-26 10:50:58] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:50:58] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:50:58] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:50:59] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.EmpleadoCON.menu(EmpleadoCON.java:23)
+	at principal.main.main(main.java:24)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:52:06] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:52:06] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:52:06] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:52:06] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.EmpleadoCON.menu(EmpleadoCON.java:23)
+	at principal.main.main(main.java:24)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:52:23] [ WARN ] [EmpleadoCON:110] El usuario ha indicado un tipo incorrecto, en el metodo que pide datos para un nuevo empleado
+[2021-10-26 10:54:17] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:54:17] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:54:17] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:54:18] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.EmpleadoCON.menu(EmpleadoCON.java:23)
+	at principal.main.main(main.java:24)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:54:18] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table empleado (codigo integer not null, nombre varchar(255), apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table empleado (codigo integer not null, nombre varchar(255), apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.EmpleadoCON.menu(EmpleadoCON.java:23)
+	at principal.main.main(main.java:24)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:56:50] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:56:50] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 10:56:50] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 10:56:51] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table departamento (codigo integer not null, nombre varchar(255), cod_responsable integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 10:56:51] [ WARN ] [ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "create table empleado (codigo integer not null, nombre varchar(255), apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table empleado (codigo integer not null, nombre varchar(255), apellido1 varchar(255), apellido2 varchar(255), lugar_nacimiento varchar(255), fecha_nacimiento varchar(255), direccion varchar(255), telefono varchar(255), puesto varchar(255), cod_departamento integer, primary key (codigo)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'type=MyISAM' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:762)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 14 more
+[2021-10-26 11:01:36] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:01:37] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:01:37] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 11:03:06] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:03:06] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:03:06] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 11:03:53] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:03:53] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:03:53] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 11:04:48] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:04:48] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:04:48] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-26 11:07:28] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:07:28] [ WARN ] [deprecation:75] HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[2021-10-26 11:07:28] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)

@@ -8,10 +8,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.exception.GenericJDBCException;
 
-import DTO.Departamento;
 import DTO.Empleado;
-import utils.HibernateUtil;
-import utils.StringUtil;
 
 public class EmpleadoDAO {
 	private static Logger logger = LogManager.getLogger(EmpleadoDAO.class);
@@ -72,7 +69,7 @@ public class EmpleadoDAO {
 	
 	public static List <Empleado> seleccionarEmpleados(Session s) {
 		try {
-			String consulta = "* from empleado";
+			String consulta = "from empleado";
 			List <Empleado> resultado = s.createQuery(consulta, Empleado.class).getResultList();
 			return resultado;
 		}

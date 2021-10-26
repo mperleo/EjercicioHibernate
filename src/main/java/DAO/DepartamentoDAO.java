@@ -15,7 +15,7 @@ import utils.StringUtil;
 public class DepartamentoDAO {
 	private static Logger logger = LogManager.getLogger(DepartamentoDAO.class);
 	
-	public static void insertarDepartamento(Session s, ArrayList<Departamento> departamentos) {
+	public static void insertarDepartamentos(Session s, ArrayList<Departamento> departamentos) {
 	    for (Departamento i: departamentos) {
 	    	insertarDepartamento(s, i);
 	    }
@@ -71,7 +71,7 @@ public class DepartamentoDAO {
 	
 	public static List <Departamento> seleccionarDepartamentos(Session s) {
 		try {
-			String consulta = "* from departamento";
+			String consulta = "from departamento";
 			List <Departamento> resultado = s.createQuery(consulta, Departamento.class).getResultList();
 			return resultado;
 		}

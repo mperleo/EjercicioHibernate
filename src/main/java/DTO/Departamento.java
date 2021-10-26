@@ -1,9 +1,6 @@
 package DTO;
 
-import java.io.Serializable;
-
-
-public class Departamento implements Serializable {
+public class Departamento {
 
 	private int codigo;
     private String nombre;

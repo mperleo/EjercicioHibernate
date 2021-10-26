@@ -1,8 +1,6 @@
 package DTO;
 
-import java.io.Serializable;
-
-public class Empleado implements Serializable {
+public class Empleado {
 
 	private int codigo;
     private String nombre;
@@ -33,7 +31,7 @@ public class Empleado implements Serializable {
 		this.cod_departamento = cod_departamento;
 	}
 	public Empleado(String nombre, String apellido1, String apellido2, String lugar_nacimiento,
-			String fecha_nacimiento, String direccion, String telefono, String puesto, int cod_departamento) {
+			String fecha_nacimiento, String direccion, String telefono, String puesto, int cod_departamento, int codigo) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
