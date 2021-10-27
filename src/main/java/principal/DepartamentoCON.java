@@ -60,7 +60,7 @@ public class DepartamentoCON {
 					System.out.println("Empleados:");
 					System.out.println("NOMBRE RESPONSABLE");
 					for (Departamento i : empleados) {
-						System.out.println(i.getNombre()+" "+i.getNombre()+" "+i.getCodResponsable());
+						System.out.println(i.getNombre()+" "+i.getNombre()+" "+i.getCod_responsable());
 					}
 					break;
 				default:
@@ -100,7 +100,7 @@ public class DepartamentoCON {
 		try {
 			System.out.println("Valor anterior: "+dep.getNombre()+" | Indica un nombre");
 			nombre = sc.next();
-			System.out.println("Valor anterior: "+dep.getCodResponsable()+" | Indica un codigo de responsable");
+			System.out.println("Valor anterior: "+dep.getCod_responsable()+" | Indica un codigo de responsable");
 			cod_responsable = sc.nextInt();
 			
 			Departamento u = new Departamento(dep.getCodigo(), nombre, cod_responsable);
