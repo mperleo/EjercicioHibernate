@@ -1,0 +1,29 @@
+[2021-10-27 11:06:15] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-27 11:06:16] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.MappingException: entity class not found: Empleado
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:79)
+	at org.hibernate.event.service.internal.EventListenerRegistryImpl.prepare(EventListenerRegistryImpl.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.prepareEventListeners(SessionFactoryImpl.java:418)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:217)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:26)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: org.hibernate.annotations.common.reflection.ClassLoadingException: Unable to load Class [Empleado]
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:43)
+	at org.hibernate.boot.internal.BootstrapContextImpl$1.classForName(BootstrapContextImpl.java:339)
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.classForName(JavaReflectionManager.java:127)
+	at org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.buildCallbacksForEntity(CallbackBuilderLegacyImpl.java:57)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: Empleado
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.annotations.common.util.StandardClassLoaderDelegateImpl.classForName(StandardClassLoaderDelegateImpl.java:40)
+	... 11 more
+[2021-10-27 11:08:24] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-27 11:12:51] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-27 11:13:34] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)

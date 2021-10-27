@@ -55,7 +55,7 @@ public class EmpleadoCON {
 				System.out.println("Empleados:");
 				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
 				for (Empleado i : empleados) {
-					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugar_nacimiento()+" "+i.getFecha_nacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCod_departamento());
+					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
 				}
 				break;
 			case 5:
@@ -134,9 +134,9 @@ public class EmpleadoCON {
 			apellido1 = sc.next();
 			System.out.println("Valor anterior: "+dep.getApellido2()+" | Indica un apellido");
 			apellido2 = sc.next();
-			System.out.println("Valor anterior: "+dep.getLugar_nacimiento()+" | Indica un lugar de nacimiento");
+			System.out.println("Valor anterior: "+dep.getLugarNacimiento()+" | Indica un lugar de nacimiento");
 			lugar_nacimiento = sc.next();
-			System.out.println("Valor anterior: "+dep.getFecha_nacimiento()+" | Indica una fecha de nacimiento");
+			System.out.println("Valor anterior: "+dep.getFechaNacimiento()+" | Indica una fecha de nacimiento");
 			fecha_nacimiento = sc.next();
 			System.out.println("Valor anterior: "+dep.getDireccion()+" | Indica un direccion");
 			direccion = sc.next();
@@ -146,7 +146,7 @@ public class EmpleadoCON {
 			puesto = sc.next();
 	
 			
-			System.out.println("Valor anterior: "+dep.getCod_departamento()+" | Indica un codigo de departamento");
+			System.out.println("Valor anterior: "+dep.getCodDepartamento()+" | Indica un codigo de departamento");
 			cod_departamento = sc.nextInt();
 			
 			Empleado u = new Empleado(dep.getCodigo(), nombre, apellido1, apellido2, lugar_nacimiento, fecha_nacimiento, direccion, telefono, puesto, cod_departamento);

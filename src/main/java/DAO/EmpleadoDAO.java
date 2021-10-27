@@ -10,6 +10,8 @@ import org.hibernate.exception.GenericJDBCException;
 
 import DTO.Empleado;
 
+
+
 public class EmpleadoDAO {
 	private static Logger logger = LogManager.getLogger(EmpleadoDAO.class);
 	
