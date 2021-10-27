@@ -39,15 +39,15 @@ public class DepartamentoCON {
 					break;
 				case 2:
 					String nombre = pedirNombre();
-					if(nombre != null) {
-						Departamento depBorrar = DepartamentoDAO.seleccionarDepartamento(s,nombre);
+					if(nombre != null) { 
+						Departamento depBorrar = DepartamentoDAO.seleccionarDepartamento(s, nombre);
 						DepartamentoDAO.borrarDepartamento(s, depBorrar);
 					}
 					break;
 				case 3:
 					String nombre1 = pedirNombre();
 					if(nombre1 != null) {
-						Departamento depOrig = DepartamentoDAO.seleccionarDepartamento(s,nombre1);
+						Departamento depOrig = DepartamentoDAO.seleccionarDepartamento(s, nombre1);
 						Departamento depModif = pedirElementoModif(depOrig);
 						DepartamentoDAO.modificarDepartamento(s, depModif);
 					}	
@@ -56,11 +56,11 @@ public class DepartamentoCON {
 					seguir = false;
 					break;
 				case 4: 
-					List<Departamento> empleados = DepartamentoDAO.seleccionarDepartamentos(s); 
+					List<Departamento> empleados = DepartamentoDAO.seleccionarDepartamentos(s);
 					System.out.println("Empleados:");
 					System.out.println("NOMBRE RESPONSABLE");
 					for (Departamento i : empleados) {
-						System.out.println(i.getNombre()+" "+i.getNombre()+" "+i.getCod_responsable());
+						System.out.println(i.getNombre()+" "+i.getNombre()+" "+i.getCodResponsable());
 					}
 					break;
 				default:
@@ -100,7 +100,7 @@ public class DepartamentoCON {
 		try {
 			System.out.println("Valor anterior: "+dep.getNombre()+" | Indica un nombre");
 			nombre = sc.next();
-			System.out.println("Valor anterior: "+dep.getCod_responsable()+" | Indica un codigo de responsable");
+			System.out.println("Valor anterior: "+dep.getCodResponsable()+" | Indica un codigo de responsable");
 			cod_responsable = sc.nextInt();
 			
 			Departamento u = new Departamento(dep.getCodigo(), nombre, cod_responsable);

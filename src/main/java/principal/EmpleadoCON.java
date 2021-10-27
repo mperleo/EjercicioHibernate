@@ -29,7 +29,9 @@ public class EmpleadoCON {
 			System.out.println("2- Borrar ");
 			System.out.println("3- Seleccionar y modificar ");
 			System.out.println("4- Ver todos ");
-			System.out.println("5- Salir ");
+			System.out.println("5- Ver empleados por departamento ");
+			System.out.println("6- Ver empleados mayores de la edad indicada ");
+			System.out.println("7- Salir ");
 			opcion = sc.nextInt();
 			switch (opcion) {
 			case 1:
@@ -56,10 +58,30 @@ public class EmpleadoCON {
 				System.out.println("Empleados:");
 				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
 				for (Empleado i : empleados) {
-					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugar_nacimiento()+" "+i.getFecha_nacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCod_departamento());
+					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
 				}
 				break;
-			case 5:
+			case 5: 
+				System.out.println("Indica el nombre del departamento");
+				String departamento = sc.next();
+				List<Empleado> empleados1 = EmpleadoDAO.seleccionarEmpleadosDepartamento(s, departamento); 
+				System.out.println("Empleados:");
+				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
+				for (Empleado i : empleados1) {
+					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
+				}
+				break;
+			case 6: 
+				System.out.println("Indica la edad a buscar");
+				int edad = sc.nextInt();
+				List<Empleado> empleados2 = EmpleadoDAO.seleccionarEmpleadosEdad(s, edad); 
+				System.out.println("Empleados:");
+				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
+				for (Empleado i : empleados2) {
+					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
+				}
+				break;
+			case 7:
 				seguir = false;
 				break;
 			default:
@@ -135,9 +157,9 @@ public class EmpleadoCON {
 			apellido1 = sc.next();
 			System.out.println("Valor anterior: "+dep.getApellido2()+" | Indica un apellido");
 			apellido2 = sc.next();
-			System.out.println("Valor anterior: "+dep.getLugar_nacimiento()+" | Indica un lugar de nacimiento");
+			System.out.println("Valor anterior: "+dep.getLugarNacimiento()+" | Indica un lugar de nacimiento");
 			lugar_nacimiento = sc.next();
-			System.out.println("Valor anterior: "+dep.getFecha_nacimiento()+" | Indica una fecha de nacimiento");
+			System.out.println("Valor anterior: "+dep.getFechaNacimiento()+" | Indica una fecha de nacimiento");
 			fecha_nacimiento = sc.next();
 			System.out.println("Valor anterior: "+dep.getDireccion()+" | Indica un direccion");
 			direccion = sc.next();
@@ -147,7 +169,7 @@ public class EmpleadoCON {
 			puesto = sc.next();
 	
 			
-			System.out.println("Valor anterior: "+dep.getCod_departamento()+" | Indica un codigo de departamento");
+			System.out.println("Valor anterior: "+dep.getCodDepartamento()+" | Indica un codigo de departamento");
 			cod_departamento = sc.nextInt();
 			
 			Empleado u = new Empleado(dep.getCodigo(), nombre, apellido1, apellido2, lugar_nacimiento, fecha_nacimiento, direccion, telefono, puesto, cod_departamento);

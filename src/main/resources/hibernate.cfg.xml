@@ -19,7 +19,7 @@
         <property name="hibernate.search.autoregister_listeners">true</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.validator.apply_to_ddl">false</property>
-        <mapping resource="Empleado.hbm.xml"/>
-        <mapping resource="Departamento.hbm.xml"/>
+        <mapping class="DTO.Empleado.java"/>
+        <mapping class="DTO.Departamento.java"/>
     </session-factory>
 </hibernate-configuration>
