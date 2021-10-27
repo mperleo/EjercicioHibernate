@@ -9,7 +9,9 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
+import DAO.DepartamentoDAO;
 import DAO.EmpleadoDAO;
+import DTO.Departamento;
 import DTO.Empleado;
 import utils.HibernateUtil;
 
@@ -64,7 +66,8 @@ public class EmpleadoCON {
 			case 5: 
 				System.out.println("Indica el nombre del departamento");
 				String departamento = sc.next();
-				List<Empleado> empleados1 = EmpleadoDAO.seleccionarEmpleadosDepartamento(s, departamento); 
+				Departamento dep = DepartamentoDAO.seleccionarDepartamento(s, departamento);
+				List<Empleado> empleados1 = EmpleadoDAO.seleccionarEmpleadosDepartamento(s, dep.getCodigo()); 
 				System.out.println("Empleados:");
 				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
 				for (Empleado i : empleados1) {
