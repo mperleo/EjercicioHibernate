@@ -3,45 +3,37 @@
                                    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 25-jun-2020 19:16:14 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
- <class name="DTO.Empleado" table="empleado">
-  <id name="codigo" type="int">
+ <class name="DTO.Empleado" table="empleado" catalog="empresa">
+<id name="codigo" type="int">
    <column name="codigo"/>
+   <generator class="assigned"/>
   </id>
-
-  <property generated="never" lazy="false" name="nombre" type="java.lang.String">
-   <column name="nombre"/>
+  <property generated="never" lazy="false" name="nombre" type="string">
+   <column length="50" name="nombre" not-null="true"/>
   </property>
-
-  <property generated="never" lazy="false" name="apellido1" type="java.lang.String">
-    <column name="apellido1"/>
-   </property>
-
-   <property generated="never" lazy="false" name="apellido2" type="java.lang.String">
-    <column name="apellido2"/>
-   </property>
-
-   <property generated="never" lazy="false" name="lugar_nacimiento" type="java.lang.String">
-    <column name="lugar_nacimiento"/>
-   </property>
-
-   <property generated="never" lazy="false" name="fecha_nacimiento" type="java.lang.String">
-    <column name="fecha_nacimiento"/>
-   </property>
-
-   <property generated="never" lazy="false" name="direccion" type="java.lang.String">
-    <column name="direccion"/>
-   </property>
-
-   <property generated="never" lazy="false" name="telefono" type="java.lang.String">
-    <column name="telefono"/>
-   </property>
-
-   <property generated="never" lazy="false" name="puesto" type="java.lang.String">
-    <column name="puesto"/>
-   </property>
-
-  <property generated="never" lazy="false" name="cod_departamento" type="int">
-   <column name="cod_departamento"/>
+  <property generated="never" lazy="false" name="apellido1" type="string">
+   <column length="50" name="apellido1" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="apellido2" type="string">
+   <column length="50" name="apellido2" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="lugarNacimiento" type="string">
+   <column length="50" name="lugar_nacimiento" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="fechaNacimiento" type="string">
+   <column length="8" name="fecha_nacimiento" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="direccion" type="string">
+   <column length="100" name="direccion" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="telefono" type="string">
+   <column length="10" name="telefono" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="puesto" type="string">
+   <column length="15" name="puesto" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="codDepartamento" type="int">
+   <column name="cod_departamento" not-null="true"/>
   </property>
  </class>
 </hibernate-mapping>
