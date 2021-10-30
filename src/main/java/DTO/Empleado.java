@@ -1,5 +1,5 @@
 package DTO;
-// Generated 27 oct 2021 11:27:58 by Hibernate Tools 5.4.32.Final
+// Generated 30 oct 2021 21:01:16 by Hibernate Tools 4.3.5.Final
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -133,9 +133,4 @@ public class Empleado implements java.io.Serializable {
 		this.codDepartamento = codDepartamento;
 	}
 
-	@Override
-	public String toString() {
-		return "Empleado [codigo=" + codigo + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2="
-				+ apellido2 + ", codDepartamento=" + codDepartamento + "]";
-	}
 }

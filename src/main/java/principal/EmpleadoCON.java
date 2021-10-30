@@ -9,9 +9,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
-import DAO.DepartamentoDAO;
 import DAO.EmpleadoDAO;
-import DTO.Departamento;
 import DTO.Empleado;
 import utils.HibernateUtil;
 
@@ -31,9 +29,7 @@ public class EmpleadoCON {
 			System.out.println("2- Borrar ");
 			System.out.println("3- Seleccionar y modificar ");
 			System.out.println("4- Ver todos ");
-			System.out.println("5- Ver empleados por departamento ");
-			System.out.println("6- Ver empleados mayores de la edad indicada ");
-			System.out.println("7- Salir ");
+			System.out.println("5- Salir ");
 			opcion = sc.nextInt();
 			switch (opcion) {
 			case 1:
@@ -63,28 +59,7 @@ public class EmpleadoCON {
 					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
 				}
 				break;
-			case 5: 
-				System.out.println("Indica el nombre del departamento");
-				String departamento = sc.next();
-				Departamento dep = DepartamentoDAO.seleccionarDepartamento(s, departamento);
-				List<Empleado> empleados1 = EmpleadoDAO.seleccionarEmpleadosDepartamento(s, dep.getCodigo()); 
-				System.out.println("Empleados:");
-				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
-				for (Empleado i : empleados1) {
-					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
-				}
-				break;
-			case 6: 
-				System.out.println("Indica la edad a buscar");
-				int edad = sc.nextInt();
-				List<Empleado> empleados2 = EmpleadoDAO.seleccionarEmpleadosEdad(s, edad); 
-				System.out.println("Empleados:");
-				System.out.println("NOMBRE APELLIDO APELLIDO LUGARNAC FECHANAC DIRECCION TELEFONO PUESTODEP");
-				for (Empleado i : empleados2) {
-					System.out.println(i.getNombre()+" "+i.getApellido1()+" "+i.getApellido2()+" "+i.getLugarNacimiento()+" "+i.getFechaNacimiento()+" "+i.getDireccion()+""+i.getTelefono()+" "+i.getCodDepartamento());
-				}
-				break;
-			case 7:
+			case 5:
 				seguir = false;
 				break;
 			default:
