@@ -56,7 +56,7 @@ public class DepartamentoDAO {
 	
 	public static Departamento seleccionarDepartamento(Session s, String nombre) {
 		try {
-			String consulta = "from departamento where nombre= :nombre";
+			String consulta = "from Departamento where nombre= :nombre";
 			Departamento resultado = s.createQuery(consulta, Departamento.class)
 				.setParameter("nombre", nombre)
 	            .setMaxResults(1)
@@ -71,7 +71,7 @@ public class DepartamentoDAO {
 	
 	public static List <Departamento> seleccionarDepartamentos(Session s) {
 		try {
-			String consulta = "from departamento";
+			String consulta = "from Departamento";
 			List <Departamento> resultado = s.createQuery(consulta, Departamento.class).getResultList();
 			return resultado;
 		}
@@ -83,7 +83,7 @@ public class DepartamentoDAO {
 	
 	public static int buscarNuevoID(Session s){
 		try {
-			String consulta = "SELECT MAX(id) from departamento";
+			String consulta = "SELECT MAX(id) from Departamento";
 			int id = s.createNativeQuery(consulta).getFirstResult();
 			return id+1;
 		}

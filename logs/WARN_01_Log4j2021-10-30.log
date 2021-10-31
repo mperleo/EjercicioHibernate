@@ -1,0 +1,23 @@
+[2021-10-30 22:21:37] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2021-10-30 22:21:37] [ ERROR] [HibernateUtil:30] HibernateUtil.buildSessionFactory(): Initial SessionFactory creation failed.
+org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [java.DTO.Empleado]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.<init>(AnnotationMetadataSourceProcessorImpl.java:109)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.<init>(MetadataBuildingProcess.java:155)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:149)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:473)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:84)
+	at utils.HibernateUtil.buildSessionFactory(HibernateUtil.java:25)
+	at utils.HibernateUtil.<clinit>(HibernateUtil.java:16)
+	at principal.DepartamentoCON.menu(DepartamentoCON.java:23)
+	at principal.main.main(main.java:21)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : java.DTO.Empleado
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:586)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:466)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 10 more
+[2021-10-30 22:22:28] [ WARN ] [pooling:72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
